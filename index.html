@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="frame">
+    <main class="calculator" aria-label="Калькулятор">
+      <section class="controls">
+        <div class="control-group">
+          <input
+            id="leftOperand"
+            class="field"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            aria-describedby="leftError"
+            value="123"
+          />
+          <div id="leftError" class="error-text" aria-live="polite"></div>
+        </div>
+
+        <div class="control-group operator-group">
+          <div id="operatorWrap" class="select-wrap">
+            <select id="operator" class="operator" aria-label="Операция">
+              <option value="+">+</option>
+              <option value="-">−</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+          </div>
+          <div class="error-text"></div>
+        </div>
+
+        <div class="control-group">
+          <input
+            id="rightOperand"
+            class="field"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            aria-describedby="rightError"
+            value="567"
+          />
+          <div id="rightError" class="error-text" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <div class="button-row">
+        <button id="calculateBtn" class="action-btn" type="button">подсчитать</button>
+      </div>
+
+      <section id="results" class="results" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
