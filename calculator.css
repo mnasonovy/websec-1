@@ -29,7 +29,7 @@ body {
   padding: 16px;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start; /* выравнивание слева */
+  justify-content: flex-start;
 }
 
 .calculator {
@@ -58,7 +58,7 @@ body {
 .select-wrap,
 .action-btn,
 .results {
-  border: 2px dashed var(--accent); /* более жирный пунктир */
+  border: 2px dashed var(--accent);
   border-radius: var(--radius);
   background: transparent;
   color: var(--text-main);
@@ -178,8 +178,6 @@ body {
   color: var(--text-muted);
   font-size: 16px;
 }
-
-/* мобильная адаптация */
 
 @media (max-width: 640px) {
   body {

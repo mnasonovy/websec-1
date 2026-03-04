@@ -156,7 +156,7 @@ function resetOnLoad() {
   clearError(leftInput, leftError);
   clearError(rightInput, rightError);
 
-  history.length = 0; // очищаем массив истории
+  history.length = 0;
   renderHistory();
 }
 
